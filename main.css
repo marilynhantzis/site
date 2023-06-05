@@ -1,0 +1,281 @@
+body {
+    font-family:'Courier New', Courier, monospace;
+    line-height: 1.5;
+}
+
+h1 {
+    font-size: 36px;
+    margin-left: 25px;
+}
+
+h2 {
+    margin-left: 25px;
+}
+
+.about1 {
+    margin-left: 25px;
+    font-size: 16px;
+    border: 2px solid;
+    border-color: black;
+    color: black;
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    display: inline-block;
+    margin-right: 25px;
+    margin-bottom: 50px;
+    vertical-align: top;
+    cursor: pointer;
+}
+
+.about1:hover {
+    background-color: brown;
+    margin-left: 25px;
+    font-size: 16px;
+    border: 2px solid;
+    border-color: brown;
+    color: white;
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    display: inline-block;
+    margin-right: 25px;
+    margin-bottom: 50px;
+    vertical-align: top;
+    transition: 400ms;
+    cursor: pointer;
+}
+
+.about2 {
+    margin-left: 25px;
+    font-size: 16px;
+    border: 2px dashed;
+    border-color: gray;
+    color: gray;
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    display: inline-block;
+    margin-right: 25px;
+    margin-bottom: 50px;
+    vertical-align: top;
+    cursor: pointer;
+}
+
+.about2:hover {
+    background-color: brown;
+    margin-left: 25px;
+    font-size: 16px;
+    border: 2px solid;
+    border-color: brown;
+    color: white;
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    display: inline-block;
+    margin-right: 25px;
+    margin-bottom: 50px;
+    vertical-align: top;
+    transition: 400ms;
+    cursor: pointer;
+}
+
+.about3 {
+    margin-left: 25px;
+    font-size: 16px;
+    border: 2px dashed;
+    border-color: gray;
+    color:gray;
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    display: inline-block;
+    margin-right: 25px;
+    margin-bottom: 50px;
+    vertical-align: top;
+    cursor: pointer;
+}
+
+.about3:hover {
+    background-color: brown;
+    margin-left: 25px;
+    font-size: 16px;
+    border: 2px solid;
+    border-color: brown;
+    color: white;
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    display: inline-block;
+    margin-right: 25px;
+    margin-bottom: 50px;
+    vertical-align: top;
+    transition: 400ms;
+    cursor: pointer;
+}
+
+.description {
+    width: 500px;
+    height: 100px;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 20px;
+    padding: 10px;
+}
+
+.deslogo {
+    margin-left: 80px;
+    margin-bottom: 35px;
+}
+
+.indi {
+    margin-top: 50px;
+    margin-left: 200px;
+}
+
+.indicator {
+    width: 200px;
+    height: 150px;
+    border: 1px solid;
+    border-color: gray;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 60px;
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 50px;
+}
+
+#maindata {
+    font-weight: bolder;
+    font-size: 32px;
+}
+
+.introducion {
+    width: 1050px;
+    height: 100px;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 20px;
+    margin-bottom: 25px;
+}
+
+.infoblock {
+    background-color: lightgray;
+    height: 450px;
+    margin-bottom: 25px;
+    width: 100%;
+}
+
+.mainmenu {
+    background-color: #1f282f;
+    color:white;
+    position: absolute;
+    right:0;
+    top:0;
+    bottom:0;
+    width:300px;
+    height: 100%;
+    text-align: center;
+}
+
+menu {
+    text-align: left;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-decoration: none;
+    color: brown;
+    transition: 600ms;
+    text-decoration: underline;  
+}
+
+.link {
+    margin-top: 30px;
+}
+
+.contact {
+    border: 2px solid;
+    width: 250px;
+    height: 200px;
+    text-align: center;
+    margin-left: 25px;
+    display: inline-block;
+    margin-bottom: 50px;
+}
+
+.backcont {
+    background-color: lightgray;
+    width: 250px;
+    height: 50px;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.map {
+    background-color: lightgray;
+    border: 2px solid;
+    height: 500;
+    width:100%
+}
+
+.maptext {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 21px;
+}
+
+.video {
+    width: 700px;
+    height: 100px;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 20px;
+    padding: 10px;
+}
+
+table {
+    text-align: center;
+    margin-left: 50px;
+}
+
+.btn {
+    margin-top: 25px;
+    margin-left: 50px;
+    font-size: 16px;
+    border: 2px solid;
+    background-color: #1f282f ;
+    border-color: #1f282f;
+    color: white;
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    margin-right: 25px;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    margin-top: 25px;
+    margin-left: 50px;
+    font-size: 16px;
+    border: 2px solid;
+    background-color: brown ;
+    border-color: #1f282f;
+    color: white;
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    margin-right: 25px;
+    margin-bottom: 50px;
+    cursor: pointer;
+    transition: 600ms;
+}
+
+.znach {
+    margin-left: 50px;
+}
