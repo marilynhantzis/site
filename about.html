@@ -1,0 +1,144 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>О компании</title>
+        <link rel="stylesheet" href="main.css">
+        <script>
+            function desc() {
+                document.getElementById('first').style.display='block';
+                document.getElementById('second').style.display='none';
+                document.getElementById('third').style.display='none';
+                document.getElementById('about1').style.borderStyle='solid';
+                document.getElementById('about1').style.borderColor='black';
+                document.getElementById('about1').style.color='black'
+                document.getElementById('about2').style.borderStyle='dashed';
+                document.getElementById('about2').style.borderColor='gray';
+                document.getElementById('about2').style.color='gray';
+                document.getElementById('about3').style.borderStyle='dashed';
+                document.getElementById('about3').style.borderColor='gray';
+                document.getElementById('about3').style.color='gray';
+            }
+            function create(){
+                document.getElementById('first').style.display='none';
+                document.getElementById('second').style.display='block';
+                document.getElementById('third').style.display='none';
+                document.getElementById('about1').style.borderStyle='dashed';
+                document.getElementById('about1').style.borderColor='gray';
+                document.getElementById('about1').style.color='gray'
+                document.getElementById('about2').style.borderStyle='solid';
+                document.getElementById('about2').style.borderColor='black';
+                document.getElementById('about2').style.color='black';
+                document.getElementById('about3').style.borderStyle='dashed';
+                document.getElementById('about3').style.borderColor='gray';
+                document.getElementById('about3').style.color='gray';
+            }
+            function service() {
+                document.getElementById('first').style.display='none';
+                document.getElementById('second').style.display='none';
+                document.getElementById('third').style.display='block';
+                document.getElementById('about1').style.borderStyle='dashed';
+                document.getElementById('about1').style.borderColor='gray';
+                document.getElementById('about1').style.color='gray'
+                document.getElementById('about2').style.borderStyle='dashed';
+                document.getElementById('about2').style.borderColor='gray';
+                document.getElementById('about2').style.color='gray';
+                document.getElementById('about3').style.borderStyle='solid';
+                document.getElementById('about3').style.borderColor='black';
+                document.getElementById('about3').style.color='black';
+            }
+        </script>
+    </head>
+    <body>
+        <img class="logo" src="https://intellectexport.ru/site/assets/files/1068/vertolety_rossii.jpg" height="50" width="200">
+        <hr>
+        <h1>О компании</h1>
+        <div class="about1" onclick="desc()" id="about1">
+            Краткое описание
+        </div>
+        <div class="about2" onclick="create()"  id="about2">
+            История
+        </div>
+        <div class="about3" onclick="service()"  id="about3">
+            Сервис
+        </div>
+        <div class="maindescription" id="first">
+            <h2>Самое важное</h2>
+            <img class="deslogo" src="https://rusdialog.ru/images/news/988f80db0bcd92e4d7f07294b0b76d86.jpg" height="350" width="550">
+            <div class="description">
+                <b>«Вертолеты России»</b> – один из мировых лидеров вертолетостроительной отрасли, единственный разработчик и производитель вертолетов в России, 
+                а также одна из немногих компаний в мире, обладающих возможностями проектирования, производства, испытаний и технического обслуживания современных вертолетов. 
+                Холдинг <b>«Вертолеты России»</b> входит в структуру Госкорпорации <b>Ростех</b>.
+            </div>
+            <br>
+            <img class="deslogo" src="https://novosti-dny.ru/uploads/posts/2019-09/15692446291ce36c31c76b64ce2bf76a5e3b668c260.jpg" height="350" width="550">
+            <div class="description">
+                География <b>«Вертолетов России»</b> охватывает всю страну. В состав холдинга входят конструкторские бюро, вертолетные заводы, предприятия по производству, 
+                обслуживанию и ремонту комплектующих изделий, авиаремонтные заводы, а также сервисные компании, обеспечивающие послепродажное сопровождение техники в России 
+                и за ее пределами. Головной офис <b>«Вертолетов России»</b> расположен в <b>Москве</b>.
+            </div>
+            <br>
+            <div class="indi">
+            <div class="indicator">
+                <span id="maindata">> 8 000</span> <br> вертолетов в эксплуатации
+            </div>
+            <div class="indicator">
+                <span id="maindata">> 100</span> <br> стран приобрели наши вертолеты 
+            </div>
+            <div class="indicator">
+                <span id="maindata">90%</span> <br> российского рынка вертолетов
+            </div>
+            <div class="indicator">
+                <span id="maindata">#1</span> <br> производитель вертолетов в России и СНГ
+            </div>
+            </div>
+        </div>
+        <div class="maindescription" id="second" style="display:none">
+            <h2>Создание</h2>
+            <div class="introducion">
+                Холдинг <b>«Вертолёты России»</b> был создан в 2007 году как дочерняя компания <b>ОАО «ОПК» «Оборонпром»</b>, в которую были переданы вертолётостроительные активы материнской компании. 
+                К концу 2010 года холдинг консолидировал контрольные пакеты всех вертолётостроительных заводов в России.
+            </div>
+            <br>
+            <div class="infoblock">
+            <img class="deslogo" src="https://helicopter.su/wp-content/uploads/2016/12/HeliRussia.jpg" height="450" width="650">
+            <div class="description">
+                В мае 2011 года <b>«Вертолёты России»</b> собирались провести первичное размещение акций на <b>Лондонской фондовой бирже</b>, 
+                планируя привлечь свыше $500 млн (из них до $250 млн в качестве инвестиций в саму компанию, остальное — владельцу — <b>«Оборонпрому»</b>). 
+                Это стало бы первым размещением предприятия российского ВПК на зарубежной площадке. Подготовка к IPO сопровождалась довольно заметной рекламной кампанией, 
+                в частности, в газете <b>«The Times»</b> было размещено поздравление принцу Уильяму со свадьбой. Рекламное объявление на целую полосу изображало вертолёт <b>Ми-26T</b>, 
+                нависший над Букингемским дворцом с большим подарочным свёртком. Дополнял рекламу слоган <i><b>«Одному известному пилоту от известного производителя вертолётов»</b></i>. 
+                Однако, размещение было отложено в силу низкого спроса на акции.
+            </div>
+            </div>
+            <h2>Участие в международных рейтингах</h2>
+            <div class="introducion">
+                Отраслевое издание <b>Defense News</b> в своем ежегодном рейтинге <b>Defense News TOP 100</b>, посвященном компаниям оборонно-промышленного комплекса со всего мира, 
+                поместило холдинг <b>«Вертолёты России»</b> на 24-е место по итогам 2012 года, отметив рекордные темпы роста российской оборонной компании, поднявшейся с 39-й позиции
+                 в рейтинге по итогам 2011 года. В анализе рейтинга отмечается, что за отчётный период ОПК России в целом показал впечатляющие результаты, 
+                 особенно на фоне снижения военных расходов США и ряда европейских стран
+            </div>
+        </div>
+        <div class="maindescription" id="third" style="display: none;">
+            <h2>Сервисное обслуживание</h2>
+            <div class="infoblock">
+                <img src="https://vuzopedia.ru/storage/app/uploads/public/61f/eb4/e86/61feb4e86be94375349987.jpg" height="450" width="650">
+                <div class="description">
+                    Сервисным обслуживанием вертолетов  занимается акционерное общество <b>«Вертолетная сервисная компания»</b>, 
+                    которая является лидером по предоставлению полного комплекса услуг послепродажного обслуживания для вертолетной техники российского производства.
+                    <br>
+                    Клиентами <b>«ВСК»</b> являются более 250 компаний в Российской Федерации и более чем в 30 странах мира. 
+                    В основном это эксплуатанты вертолётной техники, а также силовые ведомства и службы авиации специального назначения. 
+                    Поставки обеспечиваются более 80 поставщиками  аутентичной продукции, подтвержденной сертификатом соответствия.
+                </div>
+            </div>
+        </div>
+        <div class="mainmenu">
+            <h2>Меню</h2>
+            <div class="link"><a href="about.html">О компании</a></div>
+            <div class="link"><a href="finances.html">Основные показатели</a></div>
+            <div class="link"><a href="contact.html">Контакты</a></div>
+            <div class="link"><a href="video.html">Видео</a></div>
+        </div>
+    </body>
+</html>

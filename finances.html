@@ -1,0 +1,163 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Основные показатели</title>
+        <link rel="stylesheet" href="main.css">
+        <script>
+            function find() {
+                let vir = [37652, 36644, 23884, 35528, 36256, 45204,24377, 4106, 3870, 1895];
+                let pri = [16989, 8707, 0, 19966, 15710, 15456, 2912, 975, 997, 3553]
+                let max = vir[0]
+                let min = vir[0]
+                let max1 = pri[0]
+                let min1 = pri[0]
+                for(let i=0; i < vir.length; i++) {
+                    if (vir[i] > max) {
+                        max = vir[i]
+                    }
+                }
+                for(let i=0; i < vir.length; i++) {
+                    if (vir[i] < min) {
+                        min = vir[i]
+                    }
+                }
+                for(let i=0; i < pri.length; i++) {
+                    if (pri[i] > max) {
+                        max1 = pri[i]
+                    }
+                }
+                for(let i=0; i < pri.length; i++) {
+                    if (pri[i] < min) {
+                        min1 = pri[i]
+                    }
+                }
+
+                let sum = 0
+                let sum1 = 0
+                for(let i=0; i < pri.length; i++) {
+                    sum = sum + vir[i]
+                    sum1 = sum1 + pri[i]
+                }
+                let average = sum / vir.length 
+                let average1 = sum / pri.length
+                let disp = 0
+                let disp1 = 0
+                for(let i=0; i < pri.length; i++) {
+                    disp = disp + (vir[i] - average) * (vir[i] - average)
+                    disp1 = disp1 + (pri[i] - average1) * (vir[i] - average)
+                }
+                let otkl = Math.sqrt(disp / (vir.length-1))
+                let otkl1 = Math.sqrt(disp1 / (pri.length-1))
+                document.getElementById('max1').innerHTML = 'Максимальная выручка: ' + max + ' млн. руб.'
+                document.getElementById('min1').innerHTML = 'Минимальная выручка: ' + min + ' млн. руб.'
+                document.getElementById('otkl1').innerHTML = 'Среднеквадратичное отклонение выручки: ' + Math.round(otkl) + ' млн. руб.'
+                document.getElementById('max').innerHTML = 'Максимальная прибыль: ' + max1 + ' млн. руб.'
+                document.getElementById('min').innerHTML = 'Минимальная прибыль: ' + min1 + ' млн. руб.'
+                document.getElementById('otkl').innerHTML = 'Среднеквадроатичное отклонение прибыли: ' + Math.round(otkl1) + ' млн. руб.'
+            }
+        </script>
+    </head>
+    <body>
+        <img class="logo" src="https://intellectexport.ru/site/assets/files/1068/vertolety_rossii.jpg" height="50" width="200">
+        <hr>
+        <h1>Основные финансовые показатели</h1>
+        <h2>Ключевые показатели</h2>
+        <div class="indicator">
+            <span id="maindata">2,2-3,2$ млрд.</span> <br>
+            Общая капитализация (2011 г.)
+        </div>
+        <div class="indicator">
+            <span id="maindata">37.652 млн. руб.</span> <br>
+            Выручка (2021 г.)
+        </div>
+        <div class="indicator">
+            <span id="maindata">7 видов</span> <br>
+            Количество направлений деятельности (2021 г.)
+        </div>
+        <div class="indicator">
+            <span id="maindata">16.989 млн. руб.</span> <br>
+            Прибыль (2021 г.)
+        </div>
+        <h2>Выручка по годам</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Год</th>
+                    <th>Выручка, млрд. руб.</th>
+                    <th>Прибыль, млрд. руб.</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2021</td>
+                    <td>37.65</td>
+                    <td>16.99</td>
+                </tr>
+                <tr>
+                    <td>2020</td>
+                    <td>37.65</td>
+                    <td>16.99</td>
+                </tr>
+                <tr>
+                    <td>2019</td>
+                    <td>23.88</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>2018</td>
+                    <td>35.53</td>
+                    <td>19.91</td>
+                </tr>
+                <tr>
+                    <td>2017</td>
+                    <td>36.26</td>
+                    <td>15.71</td>
+                </tr>
+                <tr>
+                    <td>2016</td>
+                    <td>45.20</td>
+                    <td>15.46</td>
+                </tr>
+                <tr>
+                    <td>2015</td>
+                    <td>24.38</td>
+                    <td>2.91</td>
+                </tr>
+                <tr>
+                    <td>2014</td>
+                    <td>4.11</td>
+                    <td>0.97</td>
+                </tr>
+                <tr>
+                    <td>2013</td>
+                    <td>3.87</td>
+                    <td>0.99</td>
+                </tr>
+                <tr>
+                    <td>2012</td>
+                    <td>1.90</td>
+                    <td>3.55</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="btn" id="btn" onclick="find()">
+            Рассчитать
+        </div>
+        <div class="znach">
+        <div id="max1"></div>
+        <div id="min1"></div>
+        <div id="otkl1"></div>
+        <div id="max"></div>
+        <div id="min"></div>
+        <div id="otkl"></div>
+        </div>
+        <div class="mainmenu">
+            <h2>Меню</h2>
+            <div class="link"><a href="about.html">О компании</a></div>
+            <div class="link"><a href="finances.html">Основные показатели</a></div>
+            <div class="link"><a href="contact.html">Контакты</a></div>
+            <div class="link"><a href="video.html">Видео</a></div>
+        </div>
+    </body>
+</html>
